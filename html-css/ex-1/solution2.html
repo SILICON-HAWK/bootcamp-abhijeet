@@ -1,0 +1,105 @@
+<!-- solution-2.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Webpage - Golden Layout</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      main {
+        display: flex;
+      }
+      nav {
+        background-color: #ddd;
+        width: 200px;
+        padding: 10px;
+      }
+      section {
+        flex-grow: 1;
+        padding: 10px;
+      }
+      footer {
+        margin-top: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My First Webpage - Golden Layout</h1>
+    </header>
+
+    <main>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </nav>
+
+      <section id="section1">
+        <h2>Item List</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Item 1</td>
+            <td>$10</td>
+            <td>Item description 1</td>
+          </tr>
+          <tr>
+            <td>Item 2</td>
+            <td>$20</td>
+            <td>Item description 2</td>
+          </tr>
+          <tr>
+            <td>Item 3</td>
+            <td>$30</td>
+            <td>Item description 3</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content for Section 2.</p>
+      </section>
+
+      <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content for Section 3.</p>
+      </section>
+    </main>
+
+    <footer>
+        <p>contact us : </p>
+        <a href="abhijeet8120@gmail.com">abhijeet8120@gmail.com</a>
+    </footer>
+  </body>
+</html>
