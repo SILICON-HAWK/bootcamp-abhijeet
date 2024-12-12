@@ -1,0 +1,107 @@
+<!-- solution-3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage - Complete Version</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+        }
+        nav {
+            background-color: #ddd;
+            width: 200px;
+            padding: 10px;
+        }
+        section {
+            flex-grow: 1;
+            padding: 10px;
+        }
+        footer {
+            margin-top: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My First Webpage - Complete Version</h1>
+    </header>
+
+    <main>
+        <nav>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#section1">Item List</a></li>
+                <li><a href="#section2">About Us</a></li>
+                <li><a href="#section3">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="section1">
+            <h2>Item List</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>$10</td>
+                    <td>Item description 1</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>$20</td>
+                    <td>Item description 2</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>$30</td>
+                    <td>Item description 3</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="section2">
+            <h2>About Us</h2>
+            <p>This section provides information about the company or individual. Here's some dummy text:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel sapien felis.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Contact</h2>
+            <p>If you have any questions, feel free to reach out to us at <strong>example@email.com</strong>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: example@email.com</p>
+    </footer>
+</body>
+</html>
