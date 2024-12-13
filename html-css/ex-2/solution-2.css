@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #4CAF50;
+    --header-font-size: 2rem;
+    --body-font-size: 26px;
+    --margin-spacing: 16px;
+    --gc-col: #FFC107;
+    --table-bg-color-even: #FFC107;
+    --table-bg-color-odd: #4CAF50;
+  }
+  
+  body {
+    font-size: var(--body-font-size); /* Fix: Changed to body-font-size */
+    background-color: var(--gc-col); /* Fix: Changed to secondary-color */
+    padding: var(--margin-spacing); /* Fix: Changed to margin-spacing */
+  }
+  
+  nav a {
+    color: var(--primary-color); /* Fix: Changed to primary-color */
+    text-decoration: none;
+    margin: var(--margin-spacing);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: var(--margin-spacing);
+  }
+  
+  table {
+    width: 100%;
+    margin: var(--margin-spacing) 0;
+    color: var(--primary-color);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--table-bg-color-even);
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: var(--table-bg-color-odd);
+  }
+  
+  td {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  p,
+  li,
+  h1,
+  h2,
+  h3 {
+    color: var(--primary-color);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--margin-spacing);
+  }
+  
+  .sidebar {
+    flex: 1;
+    max-width: 30%;
+  }
+  
+  .main-content {
+    flex: 2;
+  }

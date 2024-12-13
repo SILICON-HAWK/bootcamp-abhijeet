@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #4CAF50;
+  --header-font-size: 2rem;
+  --body-font-size: 26px;
+  --margin-spacing: 16px;
+  --gc-col: #FFC107;
+  --table-bg-color-even: #FFC107;
+  --table-bg-color-odd: #4CAF50;
+
+  /* Dark theme colors inspired by Steam */
+  --dark-primary-color: #2E343B;
+  --dark-secondary-color: #1B2838;
+  --dark-background-color: #1A1D23;
+  --dark-text-color: #D7D7D7;
+  --dark-table-bg-color-even: #2F343B;
+  --dark-table-bg-color-odd: #1F2838;
+}
+
+body {
+  font-size: var(--body-font-size);
+  background-color: var(--gc-col);
+  padding: var(--margin-spacing);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: var(--margin-spacing);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: var(--margin-spacing);
+}
+
+table {
+  width: 100%;
+  margin: var(--margin-spacing) 0;
+  color: var(--primary-color);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--table-bg-color-even);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--table-bg-color-odd);
+}
+
+td {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--margin-spacing);
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 30%;
+}
+
+.main-content {
+  flex: 2;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: var(--dark-background-color);
+}
+
+body.dark-theme nav a {
+  color: var(--dark-text-color);
+  border: 1px solid var(--dark-text-color);
+}
+
+body.dark-theme table {
+  color: var(--dark-text-color);
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+  background-color: var(--dark-table-bg-color-even);
+}
+
+body.dark-theme tbody tr:nth-child(odd) {
+  background-color: var(--dark-table-bg-color-odd);
+}
+
+body.dark-theme td {
+  color: var(--dark-text-color);
+  border: 1px solid var(--dark-text-color);
+}
+
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: var(--dark-text-color);
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--gc-col);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #1A1D23;
+}

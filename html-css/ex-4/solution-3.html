@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Level 3</title>
+    <style>
+        /* General reset and body styling */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Content container with flexible grid */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+            gap: 20px;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styling with fluid typography */
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem); /* Fluid typography */
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Paragraph styling with fluid typography */
+        p {
+            font-size: clamp(1.2rem, 3vw, 1.8rem); /* Fluid typography */
+            text-align: center;
+        }
+
+        /* List styling with fluid spacing */
+        ul {
+            list-style-type: disc;
+            padding-left: clamp(10px, 3vw, 20px);
+            text-align: left;
+        }
+
+        /* List item styling */
+        li {
+            font-size: clamp(1rem, 2.5vw, 1.5rem); /* Fluid typography */
+            margin: clamp(5px, 1vw, 15px) 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>My Favorite Games</h1>
+        <p>Here are some of my favorite games that I enjoy playing:</p>
+        <ul>
+            <li><strong>Baldur's Gate 3:</strong> A masterpiece of RPG storytelling, immersive gameplay, and complex choices that impact the world.</li>
+            <li><strong>Portal 2:</strong> A mind-bending puzzle game with witty humor and a fantastic narrative.</li>
+            <li><strong>Genshin Impact:</strong> An expansive open-world action RPG with stunning visuals and engaging combat.</li>
+            <li><strong>Wuthering Waves:</strong> A highly anticipated action game with fluid combat mechanics and a captivating storyline.</li>
+        </ul>
+        <h2>Changes Made in Level 3</h2>
+        <ul>
+            <li>Replaced fixed breakpoints with <strong>auto-fill and minmax()</strong> in grid layout for flexible design.</li>
+            <li>Implemented <strong>clamp()</strong> for fluid typography to ensure text scales proportionally on all screen sizes.</li>
+            <li>Used <strong>minmax()</strong> in grid for responsive grid items that adjust according to screen size.</li>
+            <li>Ensured fluid spacing using <strong>clamp()</strong> for margins and paddings.</li>
+        </ul>
+    </div>
+</body>
+</html>

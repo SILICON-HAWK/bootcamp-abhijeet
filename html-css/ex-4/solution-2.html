@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Level 2</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            width: clamp(40%, 60vw, 80%);
+            height: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: clamp(10px, 2vw, 30px);
+            text-align: center;
+        }
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-top: 0;
+        }
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: clamp(10px, 3vw, 20px);
+            text-align: left;
+        }
+        li {
+            margin: clamp(5px, 1vw, 15px) 0;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>My Favorite Games</h1>
+        <p>Here are some of my favorite games that I enjoy playing:</p>
+        <ul>
+            <li><strong>Baldur's Gate 3:</strong> A masterpiece of RPG storytelling, immersive gameplay, and complex choices that impact the world.</li>
+            <li><strong>Portal 2:</strong> A mind-bending puzzle game with witty humor and a fantastic narrative.</li>
+            <li><strong>Genshin Impact:</strong> An expansive open-world action RPG with stunning visuals and engaging combat.</li>
+            <li><strong>Wuthering Waves:</strong> A highly anticipated action game with fluid combat mechanics and a captivating storyline.</li>
+        </ul>
+        <h2>Changes Made in Level 2</h2>
+        <ul>
+            <li>Introduced the <strong>clamp()</strong> function for setting flexible font sizes, widths, and paddings.</li>
+            <li>Adjusted the content width to use <strong>clamp(40%, 60vw, 80%)</strong> for responsiveness.</li>
+            <li>Used <strong>clamp()</strong> for font sizes, ensuring text scales proportionally with screen size.</li>
+            <li>Applied flexible margins using <strong>clamp()</strong> to maintain spacing consistency across devices.</li>
+            <li>Enhanced padding with <strong>clamp()</strong> for adaptable content spacing.</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* variables.css */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #4CAF50;
+    --header-font-size: 2rem;
+    --body-font-size: 26px;
+    --margin-spacing: 16px;
+}
+
+body {
+    font-size: var(--body-font-size); 
+    background-color: var(--secondary-color); 
+    padding: var(--margin-spacing); 
+}
+
+nav a {
+    color: var(--primary-color); 
+    text-decoration: none;
+    margin: var(--margin-spacing);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: var(--margin-spacing);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--margin-spacing) 0;
+}
+
+tr,
+th,
+td {
+    border: 1px solid var(--primary-color);
+}
+
+p,
+h2,
+h3 {
+    color: var(--primary-color);
+    margin: var(--margin-spacing) 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--margin-spacing);
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 30%;
+}
+
+.main-content {
+    flex: 2;
+}
