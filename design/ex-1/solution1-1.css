@@ -1,0 +1,31 @@
+/* Apply system fonts to the body and main elements */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold; /* Bold font for headers */
+}
+
+p {
+    font-family: Courier, monospace;
+    font-weight: normal; /* Normal weight for paragraphs */
+}
+
+.summary, .preamble, .participation, .benefits {
+    font-family: Arial, sans-serif; /* Using Arial for these sections */
+    font-weight: lighter; /* Light weight for these paragraphs */
+}
+
+footer {
+    font-family: 'Times New Roman', serif;
+    font-weight: normal; /* Normal weight for footer */
+}
+
+.zen-validate-html, .zen-validate-css, .zen-license {
+    font-family: 'Courier New', monospace;
+    font-weight: bold; /* Bold for footer links */
+}

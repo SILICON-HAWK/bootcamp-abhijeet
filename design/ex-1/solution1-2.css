@@ -1,0 +1,31 @@
+/* Applying web fonts */
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto for the body text */
+    font-weight: normal;
+    font-size: 25px;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Merriweather for headings */
+    font-weight: bold; /* Bold weight for headings */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Roboto for paragraphs */
+    font-weight: normal;
+}
+
+.summary, .preamble, .participation, .benefits {
+    font-family: 'Roboto', sans-serif; /* Roboto for these sections */
+    font-weight: lighter; /* Lighter weight for paragraphs */
+}
+
+footer {
+    font-family: 'Merriweather', serif; /* Merriweather for footer */
+    font-weight: normal;
+}
+
+.zen-validate-html, .zen-validate-css, .zen-license {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for footer links */
+    font-weight: bold; /* Bold for footer links */
+}

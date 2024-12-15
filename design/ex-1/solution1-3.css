@@ -1,0 +1,58 @@
+/* Step 1: Define the custom font using @font-face */
+@font-face {
+    font-family: 'Geist';
+    src: url('/Geist-v1.4.01/Geist-v1.4.01/webfonts/Geist-Regular.woff2') format('woff2');
+    /* the font files are added in gitignore folder consider downloading them locally */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Step 2: Apply the custom font and create typographic hierarchy */
+
+/* Body text */
+body {
+    font-family: 'Geist', sans-serif; /* Use Geist for body text */
+    line-height: 1.6; /* Adjust line height for better readability */
+    letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+    font-weight: normal;
+    font-size: 25px; /* Adjust font size */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Geist', sans-serif; /* Use Geist for main headings */
+    font-size: 40px;
+    font-weight: bold; /* Make headings bold */
+    letter-spacing: -1px; /* Slight negative letter spacing for a tighter feel */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+h2 {
+    font-family: 'Geist', sans-serif; /* Use Geist for secondary headings */
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: 'Geist', sans-serif; /* Use Geist for smaller headings */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for paragraphs for contrast */
+    font-weight: normal;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    font-family: 'Geist', sans-serif; /* Use Geist for footer */
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.8px; /* Slightly increased letter spacing for footer links */
+}
