@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Task - Level 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .responsive-image {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+
+        picture img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-image">
+        <picture>
+            <source srcset="https://picsum.photos/200/300?grayscale" media="(max-width: 600px)">
+            <source srcset="https://picsum.photos/400/600?grayscale" media="(min-width: 601px)">
+            <img src="https://picsum.photos/400/600" alt="Responsive Image" loading="lazy">
+        </picture>
+    </div>
+</body>
+</html>
