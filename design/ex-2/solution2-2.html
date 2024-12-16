@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Dark and Light Themes</title>
+    <link rel="stylesheet" href="solution2-2.css">
+</head>
+
+<body class="light">
+    <!-- Main Header -->
+    <header>
+        <h1>Explore Dark and Light Themes</h1>
+        <h2>Switch Between Themes to See the Effect</h2>
+    </header>
+
+    <!-- Color Swatch Section -->
+    <section class="color-swatch">
+        <h3>Color Swatches</h3>
+        <div class="swatch-grid">
+            <div class="swatch">
+                <p>Primary</p>
+                <div class="color-box primary"></div>
+            </div>
+            <div class="swatch">
+                <p>Secondary</p>
+                <div class="color-box secondary"></div>
+            </div>
+            <div class="swatch">
+                <p>Accent</p>
+                <div class="color-box accent"></div>
+            </div>
+            <div class="swatch">
+                <p>Light</p>
+                <div class="color-box light"></div>
+            </div>
+            <div class="swatch">
+                <p>Dark</p>
+                <div class="color-box dark"></div>
+            </div>
+            <div class="swatch">
+                <p>Background</p>
+                <div class="color-box background"></div>
+            </div>
+        </div>
+        <!-- Button to Toggle Themes -->
+        <button class="btn" onclick="toggleTheme()">Switch to Dark Theme</button>
+    </section>
+
+    <section class="image-container">
+        <img src="https://via.placeholder.com/800x400" alt="Sample Image">
+        <div class="overlay-text">Overlay Text for Contrast</div>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains('light')) {
+                body.classList.replace('light', 'dark');
+            } else {
+                body.classList.replace('dark', 'light');
+            }
+
+            const button = document.querySelector('.btn');
+            if (body.classList.contains('dark')) {
+                button.textContent = 'Switch to Light Theme';
+            } else {
+                button.textContent = 'Switch to Dark Theme';
+            }
+        }
+    </script>
+</body>
+
+</html>

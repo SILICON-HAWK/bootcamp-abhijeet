@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Level 1 Colors</title>
+	<link rel="stylesheet" href="/bootcamp-abhijeet/design/ex-2/solution2-1.css">
+</head>
+
+<body class="monochromatic">
+	<!-- Main Header -->
+	<header>
+		<h2>Welcome to the Color Showcase</h2>
+		<h3>Explore Monochromatic, Complementary, and Three-Color Themes</h3>
+		<h3>You can click on Each card to change to various color themes/schemes to dynamically change the colors.</h3>
+	</header>
+	<!-- Additional Showcase -->
+	<section>
+		<h3>Text and Border Showcase</h3>
+		<p class="subtle-text">This is some text demonstrating color application.</p>
+		<div class="border-box">A box with a border showing the effect of secondary colors.</div>
+		<p class="highlighted">A highlighted paragraph using the accent color for text.</p>
+	</section>
+
+
+	<!-- Cards Section -->
+	<section>
+		<div class="card" data-theme="monochromatic">
+			<h3>Monochromatic Theme</h3>
+			<p>This theme uses variations of a single base color to create a cohesive and visually appealing design.</p>
+			<div class="color-swatch">
+				<p><strong>Primary Color:</strong> <span class="color-box primary"></span></p>
+				<p><strong>Light Color:</strong> <span class="color-box light"></span></p>
+				<p><strong>Dark Color:</strong> <span class="color-box dark"></span></p>
+				<p><strong>Background Color:</strong> <span class="color-box background"></span></p>
+			</div>
+			<button class="btn">Click Me</button>
+			<div class="border-box">A box with border and shadow.</div>
+		</div>
+
+		<div class="card" data-theme="complementary">
+			<h3>Complementary Theme</h3>
+			<p>Complementary colors create contrast and balance, enhancing visual interest while maintaining harmony.
+			</p>
+			<div class="color-swatch">
+				<p><strong>Primary Color:</strong> <span class="color-box primary"></span></p>
+				<p><strong>Secondary Color:</strong> <span class="color-box secondary"></span></p>
+				<p><strong>Background Color:</strong> <span class="color-box background"></span></p>
+			</div>
+			<button class="btn">Click Me</button>
+			<div class="border-box">A box with border and shadow.</div>
+		</div>
+
+		<div class="card" data-theme="three-color">
+			<h3>Three-Color Scheme</h3>
+			<p>A three-color scheme incorporates an accent color for additional highlights, perfect for headers and
+				buttons.</p>
+			<div class="color-swatch">
+				<p><strong>Primary Color:</strong> <span class="color-box primary"></span></p>
+				<p><strong>Secondary Color:</strong> <span class="color-box secondary"></span></p>
+				<p><strong>Accent Color:</strong> <span class="color-box accent"></span></p>
+				<p><strong>Background Color:</strong> <span class="color-box background"></span></p>
+			</div>
+			<button class="btn">Click Me</button>
+			<div class="border-box">A box with border and shadow.</div>
+		</div>
+	</section>
+	<script>
+		// Get all the cards
+		const cards = document.querySelectorAll('.card');
+
+		// Add click event listeners to each card
+		cards.forEach((card) => {
+			card.addEventListener('click', () => {
+				// Get the theme from the data attribute
+				const theme = card.getAttribute('data-theme');
+
+				// Update the body class to apply the new theme
+				document.body.className = theme;
+			});
+		});
+	</script>
+</body>
+
+</html>

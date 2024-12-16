@@ -1,0 +1,202 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    background-color: var(--secondary);
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    height: 20vh;
+    width: 20vw;
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: x-large;
+}
+
+button.btn:hover {
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+.color-swatch {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--background);
+    min-height: 50vh;
+}
+
+.color-swatch p {
+    margin: 5px 0;
+}
+
+.color-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.color-box.primary {
+    background-color: var(--primary);
+}
+
+.color-box.secondary {
+    background-color: var(--secondary);
+}
+
+.color-box.accent {
+    background-color: var(--accent);
+}
+
+.color-box.light {
+    background-color: var(--light);
+}
+
+.color-box.dark {
+    background-color: var(--dark);
+}
+
+.color-box.background {
+    background-color: var(--background);
+}
+
+.highlighted {
+    color: var(--accent);
+}
+
+.subtle-text {
+    color: var(--dark);
+}
+
+.border-box {
+    border: 2px solid var(--secondary);
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+}
+
+/* Light Theme */
+body.light {
+    --primary: #a0d2eb;
+    /* Ice Cold */
+    --secondary: #d0bdf4;
+    /* Medium Purple */
+    --accent: #8458B3;
+    /* Purple Pain */
+    --background: #e5eaf5;
+    /* Freeze Purple */
+    --text: #333;
+    --light: rgba(160, 210, 235, 0.2);
+    /* Light Ice Cold */
+    --dark: rgba(132, 88, 179, 0.8);
+    /* Dark Purple Pain */
+}
+
+/* Dark Theme */
+body.dark {
+    --primary: #8458B3;
+    /* Purple Pain */
+    --secondary: #a28089;
+    /* Heavy Purple */
+    --accent: #a0d2eb;
+    /* Ice Cold */
+    --background: #2f2f3e;
+    /* Dark Background */
+    --text: #fff;
+    --light: rgba(132, 88, 179, 0.2);
+    /* Light Purple Pain */
+    --dark: rgba(160, 210, 235, 0.8);
+    /* Dark Ice Cold */
+}
+
+/* Image with Overlay */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--text);
+    background-color: var(--background);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Color Swatch Grid */
+.swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.swatch {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--background);
+    border-radius: 8px;
+}
+
+.swatch p {
+    margin: 5px 0;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.color-swatch h3{
+    color: var(--text);
+}
