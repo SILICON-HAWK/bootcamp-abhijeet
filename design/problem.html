@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Principles and Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Design Principles and Exercises</h1>
+
+    <section>
+        <h2>Fonts</h2>
+        <p>Introduction to fonts, including different font types, Google Fonts, and local font installation.</p>
+        <ul>
+            <li>Understand different font types (serif, sans-serif, monospace, etc.)</li>
+            <li>Learn how to use Google Fonts and install fonts locally</li>
+            <li>Explore how font choices impact readability and aesthetics</li>
+        </ul>
+        <h3>Exercise 1: Basics of Fonts</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>Use the same webpage</li>
+            <li>Add a snippet of JS code (10 lines) to the HTML</li>
+            <li>Apply basic font styles using system fonts (e.g., Arial, Times New Roman, Courier)</li>
+            <li>Change the weights and apply different weight to different classes</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Use Google Fonts to apply three fonts (sans-serif for text, serif for headings, monospace for code)</li>
+            <li>Check how variable fonts work</li>
+            <li>Illustrate it in your page</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Install a custom font locally and use it in the page</li>
+            <li>Combine multiple font families to create a typographic hierarchy</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Colors</h2>
+        <p>Introduction to color theory, CSS color formats, and color usage.</p>
+        <ul>
+            <li>Learn about color theory: color wheels, themes, and combinations</li>
+            <li>Understand CSS color formats (hex, RGB, HSL) and alpha values</li>
+            <li>Explore the use of shadows, borders, and transparency</li>
+        </ul>
+        <h3>Exercise 2: Basics of Colors</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>Add a card to the page</li>
+            <li>Apply a monochromatic theme to the entire page using a base color</li>
+            <li>Ensure the card (background, border, and shadow) stands out using alpha channels for subtle
+                differentiation</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Create dark and light themes for the page using CSS variables</li>
+            <li>Define --primary, --secondary, and --background colors</li>
+            <li>Create two separate stylesheets, one for dark and one for light mode</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Design a gradient theme using only CSS</li>
+            <li>Apply linear gradients to headers and radial gradients to buttons</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Icons</h2>
+        <p>Introduction to icon types, usage, and implementation.</p>
+        <ul>
+            <li>Learn about different icon types: SVGs and icon fonts</li>
+            <li>Explore use cases for icons in navigation, buttons, and content</li>
+            <li>Compare advantages and limitations of SVGs and fonts</li>
+        </ul>
+        <h3>Exercise 3: Basics of Icons</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>Add three icons to a page using an icon font library (e.g., Font Awesome)</li>
+            <li>Style the icons using CSS (e.g., size, color)</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Replace one icon with an SVG file</li>
+            <li>Create a grid of six icons (three from a font library and three as inline SVG)</li>
+            <li>Add hover effects to icons (e.g., color change, scaling)</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Design a navigation bar with icons as the main interactive elements</li>
+            <li>Include home, about, and contact icons</li>
+            <li>Align the icons with labels using CSS</li>
+            <li>Create buttons for download and upload, embedding SVG icons</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Images</h2>
+        <p>Introduction to image types, editing, and implementation.</p>
+        <ul>
+            <li>Understand image types (JPEG, PNG, SVG) and their use cases</li>
+            <li>Learn basic image editing: transparency, compression, and resizing</li>
+            <li>Explore advanced techniques: full-bleed images, placeholders, and responsive images</li>
+        </ul>
+        <h3>Exercise 4: Basics of Images</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>Add three images to a web page</li>
+            <li>Apply CSS styles for width, height, and border-radius</li>
+            <li>Use a placeholder image service (e.g., Lorem Picsum)</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Edit an image to adjust its size and compression</li>
+            <li>Add a full-bleed image as a page header</li>
+            <li>Use CSS to add overlays (e.g., gradient or color tint)</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Implement responsive images using the <picture> element</li>
+            <li>Create an image with high-res and low-res versions for different devices</li>
+            <li>Optimize image loading using lazy loading techniques</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Layouts and Spacing</h2>
+        <p>Introduction to creating balanced layouts using CSS.</p>
+        <ul>
+            <li>Learn to create balanced layouts using CSS</li>
+            <li>Explore spacing techniques: margins, padding, and grid systems</li>
+            <li>Understand the importance of alignment and consistency</li>
+        </ul>
+        <h3>Exercise 5: Layout Principles</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>Recreate the layout of a simple webpage (e.g., medium.com article)</li>
+            <li>Focus on applying consistent margins and padding</li>
+            <li>Use white space to create clear separation between sections</li>
+            <li>Align text and images correctly</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Demonstrate a layout that emphasizes visual hierarchy</li>
+            <li>Design a homepage with a large hero section, a featured article grid, and a footer</li>
+            <li>Use larger fonts and bolder colors for important elements</li>
+            <li>Add gutters between sections to maintain visual clarity</li>
+            <li>Apply a CSS grid system to organize content effectively</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Design Principles in Action</h2>
+        <p>Review and critique of Indian websites.</p>
+        <ul>
+            <li>Review a few Indian websites and identify areas for improvement</li>
+            <li>Critique the websites based on design principles and suggest improvements</li>
+        </ul>
+        <h3>Exercise 6: Redesign of Websites</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>For each of the websites given, annotate the problems with it using the screenshot tool mentioned</li>
+            <li>Suggest websites that have done similar things better, that can be used for inspiration</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Compare two websites for both design and information structure</li>
+            <li>Design a navigation bar with icons as the main interactive elements</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Do redesign of at least two of the sites from level 1 exercises</li>
+            <li>Feel free to cut out parts of the website and implement only the relevant part of the website</li>
+        </ul>
+        <p>Websites to review:</p>
+        <ul>
+            <li>Indian Government Press Releases (Hint: take a look at US Department of State)</li>
+            <li>IITM CSE Faculty site</li>
+            <li>IIT B Talk</li>
+            <li>Indian Railways website</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Design Principles in Action</h2>
+        <p>Review and critique of Indian websites.</p>
+        <ul>
+            <li>Review a few Indian websites and identify areas for improvement</li>
+            <li>Critique the websites based on design principles and suggest improvements</li>
+        </ul>
+        <h3>Exercise 6: Redesign of Websites</h3>
+        <p>Level 1:</p>
+        <ul>
+            <li>For each of the websites given, annotate the problems with it using the screenshot tool mentioned</li>
+            <li>Suggest websites that have done similar things better, that can be used for inspiration</li>
+        </ul>
+        <p>Level 2:</p>
+        <ul>
+            <li>Compare two websites for both design and information structure</li>
+            <li>Design a navigation bar with icons as the main interactive elements</li>
+        </ul>
+        <p>Level 3:</p>
+        <ul>
+            <li>Do redesign of at least two of the sites from level 1 exercises</li>
+            <li>Feel free to cut out parts of the website and implement only the relevant part of the website</li>
+        </ul>
+    </section>
+</body>
+</html>

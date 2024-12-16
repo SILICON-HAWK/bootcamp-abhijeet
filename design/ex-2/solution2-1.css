@@ -1,150 +1,151 @@
 /* Global Styles */
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    transition: all 0.3s ease;
-    font-size: 30px;
-  }
-  
-  header {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 27vw;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--primary);
-    color: var(--text);
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  button.btn {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-    background-color: var(--primary);
-    color: var(--text);
-  }
-  
-  button.btn:hover {
-    background-color: var(--dark);
-    color: var(--text);
-  }
-  
-  .color-swatch {
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: var(--background);
-  }
-  
-  .color-swatch p {
-    margin: 5px 0;
-  }
-  
-  .color-box {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
-  
-  .color-box.primary {
-    background-color: var(--primary);
-  }
-  
-  .color-box.secondary {
-    background-color: var(--secondary);
-  }
-  
-  .color-box.accent {
-    background-color: var(--accent);
-  }
-  
-  .color-box.light {
-    background-color: var(--light);
-  }
-  
-  .color-box.dark {
-    background-color: var(--dark);
-  }
-  
-  .color-box.background {
-    background-color: var(--background);
-  }
-  
-  .highlighted {
-    color: var(--accent);
-  }
-  
-  .subtle-text {
-    color: var(--dark);
-  }
-  
-  .border-box {
-    border: 2px solid var(--secondary);
-    padding: 20px;
-    margin-top: 20px;
-    background-color: var(--background);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--text);
-  }
-  
-  
-  /* Monochromatic Theme */
-  
-  body.monochromatic {
-    --primary: #4a90e2; /* Base color */
-    --light: rgba(74, 144, 226, 0.2);
-    --dark: rgb(0, 48, 100);
-    --background: #f5faff;
-    --text: #333;
-    --accent: #4a90e2;
-    --secondary: #4a90e2;
-  }
-  
-  
-  /* Complementary Theme */
-  
-  body.complementary {
-    --primary: #e24a90;
-    --secondary: #4a90e2;
-    --background: #fff4f7;
-    --text: #333;
-    --accent: #4a90e2;
-  }
-  
-  
-  /* Three-Color Theme */
-  
-  body.three-color {
-    --primary: #ffd700;
-    --secondary: #e24a90;
-    --accent: #4a90e2;
-    --background: #fffbea;
-    --text: #222;
-    --light: #fff;
-    --dark: #333;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  font-size: 1.3rem;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 27vw;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+button.btn:hover {
+  background-color: var(--dark);
+  color: var(--text);
+}
+
+.color-swatch {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--background);
+}
+
+.color-swatch p {
+  margin: 5px 0;
+}
+
+.color-box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.color-box.primary {
+  background-color: var(--primary);
+}
+
+.color-box.secondary {
+  background-color: var(--secondary);
+}
+
+.color-box.accent {
+  background-color: var(--accent);
+}
+
+.color-box.light {
+  background-color: var(--light);
+}
+
+.color-box.dark {
+  background-color: var(--dark);
+}
+
+.color-box.background {
+  background-color: var(--background);
+}
+
+.highlighted {
+  color: var(--accent);
+}
+
+.subtle-text {
+  color: var(--dark);
+}
+
+.border-box {
+  border: 2px solid var(--secondary);
+  padding: 20px;
+  margin-top: 20px;
+  background-color: var(--background);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+}
+
+
+/* Monochromatic Theme */
+
+body.monochromatic {
+  --primary: #4a90e2;
+  /* Base color */
+  --light: rgba(74, 144, 226, 0.2);
+  --dark: rgb(0, 48, 100);
+  --background: #f5faff;
+  --text: #333;
+  --accent: #4a90e2;
+  --secondary: #4a90e2;
+}
+
+
+/* Complementary Theme */
+
+body.complementary {
+  --primary: #e24a90;
+  --secondary: #4a90e2;
+  --background: #fff4f7;
+  --text: #333;
+  --accent: #4a90e2;
+}
+
+
+/* Three-Color Theme */
+
+body.three-color {
+  --primary: #ffd700;
+  --secondary: #e24a90;
+  --accent: #4a90e2;
+  --background: #fffbea;
+  --text: #222;
+  --light: #fff;
+  --dark: #333;
+}
