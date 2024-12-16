@@ -13,8 +13,9 @@ body {
 i, .icon-svg {
     transition: transform 0.3s, color 0.3s;
     color: #4361ee;
-    font-size: 30px;
     height: 100px;
+    width: auto;
+    font-size: 50px;
 }
 
 i:hover, .icon-svg:hover {
