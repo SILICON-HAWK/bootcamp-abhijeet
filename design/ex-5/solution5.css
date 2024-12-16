@@ -1,9 +1,8 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Roboto for the body text */
-    font-weight: normal;
-    font-size: 25px;
+    font-family: 'Roboto', sans-serif;;
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 
 header {
@@ -48,7 +47,7 @@ main {
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -92,4 +91,18 @@ footer {
     padding: 1em;
     text-align: center;
     clear: both;
+    font-family: 'Merriweather', serif; /* Merriweather for footer */
+    font-weight: normal;
 }
+
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Merriweather for headings */
+    font-weight: bold; /* Bold weight for headings */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Roboto for paragraphs */
+    font-weight: normal;
+}
+
