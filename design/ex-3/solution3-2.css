@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+i, .icon-svg {
+    transition: transform 0.3s, color 0.3s;
+    color: #4361ee;
+    font-size: 30px;
+    height: 100px;
+}
+
+i:hover, .icon-svg:hover {
+    color: #f72585;
+    transform: scale(1.2);
+}
