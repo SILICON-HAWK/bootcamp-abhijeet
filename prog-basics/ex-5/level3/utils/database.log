@@ -4,3 +4,9 @@
 2024-12-17T14:54:28.586Z [INFO]: Users table created successfully.
 2024-12-17T14:54:28.587Z [INFO]: Retrieved 0 user(s) from the database.
 2024-12-17T14:54:28.589Z [INFO]: Database connection closed.
+2024-12-17T18:35:14.639Z [INFO]: Starting database operations...
+2024-12-17T18:35:14.647Z [INFO]: Connected to SQLite database: database.sqlite
+2024-12-17T18:35:14.652Z [ERROR]: Error inserting user: SQLITE_ERROR: table users has no column named email
+2024-12-17T18:35:14.653Z [INFO]: Users table created successfully.
+2024-12-17T18:35:14.653Z [INFO]: Retrieved 0 user(s) from the database.
+2024-12-17T18:35:14.655Z [INFO]: Database connection closed.

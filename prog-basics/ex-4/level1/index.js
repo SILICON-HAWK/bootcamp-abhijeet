@@ -6,15 +6,15 @@ function showHelp() {
     console.log(`
 Usage:
     node index.js <command> [arguments]
-
+    npm run dev <command> [arguments] if you want to run debugger
 Commands:
     add [numbers]        - Add a list of numbers.
     multiply [numbers]   - Multiply a list of numbers.
     divide [numbers]     - Divide a list of numbers (no zero allowed).
 
 Examples:
-    node index.js add 1 2 3
-    node index.js multiply 4 5 6
+    npm dev add 1 2 3
+    npm dev multiply 4 5 6
     node index.js divide 10 2
 `);
 }

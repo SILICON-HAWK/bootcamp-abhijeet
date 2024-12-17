@@ -6,8 +6,7 @@
     "start": "node index.js",
     "dev": "cross-env DEBUG=* node index.js",
     "dev:mathutils": "cross-env DEBUG=mathutils node index.js",
-    "dev:interactive": "cross-env DEBUG=interactive node index.js",
-    "dev:all": "cross-env DEBUG=mathutils,interactive node index.js"
+    "dev:interactive": "cross-env DEBUG=interactive node index.js"
   },
   "keywords": [],
   "author": "",

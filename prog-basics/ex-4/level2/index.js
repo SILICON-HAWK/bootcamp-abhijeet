@@ -7,7 +7,7 @@ function showHelp() {
     console.log(`
 Usage:
     node index.js <command> [arguments]
-
+    npm dev <command> [args]
 Commands:
     add [numbers]        - Add a list of numbers.
     multiply [numbers]   - Multiply a list of numbers.
@@ -15,8 +15,8 @@ Commands:
     interactive          - Run the interactive session.
 
 Examples:
-    node index.js add 1 2 3
-    node index.js multiply 4 5 6
+    npm run dev add 1 2 3
+    npm start multiply 4 5 6
     node index.js divide 10 2
     node index.js interactive
 `);

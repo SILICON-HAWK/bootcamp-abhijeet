@@ -1,0 +1,20 @@
+html{
+    background-color: wheat;
+    background: linear-gradient(#2f3436, #1a1d23);
+}
+body{
+    font-size: 1.7rem;
+}
+img{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 20px;
+    border: 5px solid rgb(88, 60, 7);
+}
+img:hover{
+    transform: scale(1.5);
+    transition: cubic-bezier(0.2, 0.82, 0.165, 1) 0.5s;
+}
+h1, h2, h3 {
+    color: aliceblue;
+}

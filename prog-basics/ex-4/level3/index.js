@@ -7,18 +7,19 @@ function showHelp() {
     console.log(`
 Usage:
     node index.js <command> [arguments]
+    npm dev <selective debug option> <command> [args]
 
-Commands:
-    add [numbers]        - Add a list of numbers.
-    multiply [numbers]   - Multiply a list of numbers.
-    divide [numbers]     - Divide a list of numbers (no zero allowed).
-    interactive          - Run the interactive session.
+    Ex: npm run dev:mathutils add 10 10
+
+    debug options include
+    dev:mathutils
+    dev:interactive
 
 Examples:
-    node index.js add 1 2 3
-    node index.js multiply 4 5 6
+    npm run dev add 1 2 3
+    npm start multiply 4 5 6
     node index.js divide 10 2
-    node index.js interactive
+    npm run dev interactive
 `);
 }
 
