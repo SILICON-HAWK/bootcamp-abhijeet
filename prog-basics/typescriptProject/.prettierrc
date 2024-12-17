@@ -1,0 +1,8 @@
+{
+  "semi": true,                                // Use semicolons
+  "singleQuote": true,                         // Use single quotes instead of double quotes
+  "tabWidth": 2,                               // Set tab width to 2 spaces
+  "trailingComma": "es5",                      // Add trailing commas where valid in ES5 (objects, arrays)
+  "printWidth": 80,                            // Wrap lines at 80 characters
+  "bracketSpacing": true                       // Add spaces inside object braces
+}

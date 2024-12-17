@@ -1,0 +1,14 @@
+# Default Configuration
+app:
+  name: YAML Config Exercise
+  version: 1.0.0
+  description: A simple configuration management example
+
+database:
+  host: localhost
+  port: 5432
+  username: myuser
+
+features:
+  debug_mode: false
+  max_connections: 100

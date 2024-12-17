@@ -1,0 +1,8 @@
+logging:
+  level: info
+
+commands:
+  - name: sin
+    file: "./commands/mathFunction"
+  - name: cos
+    file: "./commands/mathFunction"

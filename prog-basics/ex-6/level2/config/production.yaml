@@ -1,0 +1,11 @@
+# Production Environment Configuration
+database:
+  host: prod-db-cluster
+  port: 5432
+  max_connections: 100
+
+logging:
+  level: error
+
+features:
+  enable_mock_data: false

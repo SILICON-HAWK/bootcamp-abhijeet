@@ -1,0 +1,11 @@
+# Development Environment Configuration
+database:
+  host: localhost
+  port: 5433
+  max_connections: 5
+
+logging:
+  level: debug
+
+features:
+  enable_mock_data: true

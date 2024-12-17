@@ -1,0 +1,19 @@
+{
+  "name": "level3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^3.3.12",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
