@@ -1,0 +1,22 @@
+{
+  "name": "ex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "nodemondev": "nodemon index.js",
+    "prestart": "if not exist \"node_modules\" npm install"
+  },
+  "bin": {
+    "compute": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "nodemon": "^3.1.9",
+    "winston": "^3.17.0"
+  }
+}

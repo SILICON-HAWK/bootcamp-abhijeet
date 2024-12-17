@@ -1,0 +1,20 @@
+{
+  "name": "prog-basics",
+  "version": "1.0.0",
+  "description": "aganitha bootcamp programming basics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env DEBUG=* node index.js",
+    "nodemondev": "nodemon index.js"
+  },
+  "author": "abhijeet",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

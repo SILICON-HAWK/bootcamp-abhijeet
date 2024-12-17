@@ -1,0 +1,20 @@
+{
+  "name": "ex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env DEBUG=* node index.js",
+    "dev:mathutils": "cross-env DEBUG=mathutils node index.js",
+    "dev:interactive": "cross-env DEBUG=interactive node index.js",
+    "dev:all": "cross-env DEBUG=mathutils,interactive node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "debug": "^4.4.0"
+  }
+}
