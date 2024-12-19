@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+
+    <!-- Google Font Integration -->
+    <link id="google-font-link" rel="stylesheet" href="">
+
+    <style>
+        /* Table Styling */
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.5rem;
+            border: 2px solid black;
+        }
+        
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+            border: 2px solid black;
+        }
+
+        /* Highlight Class */
+        .highlight {
+            background-color: #0090f079;
+            color: #ffffff;
+            border: 2px solid #0077ff;
+        }
+
+        /* Browser Info Section */
+        #browserInfo {
+            margin-top: 20px;
+        }
+
+        #browserInfo p {
+            font-size: 1.5rem;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1.4rem;
+            background-color: wheat;
+            border-radius: 100px;
+        }
+        button:hover{
+            background-color: rgb(228, 188, 115);
+        }
+
+        body{
+            margin: 10vw;
+            background-color: wheat;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Student Management Dashboard</h1>
+
+    <button onclick="addStudent()">Insert Student data</button>
+    <button onclick="addStudentDummy()">Add Dummy Student data</button>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <!-- Button to Change Font -->
+    <button onclick="changeFont()">Change Font</button>
+
+    <!-- Browser Info Section -->
+    <div id="browserInfo">
+        <p><strong>Browser:</strong> <span id="browserName"></span></p>
+        <p><strong>Version:</strong> <span id="browserVersion"></span></p>
+        <p><strong>Window Dimensions:</strong> <span id="windowDimensions"></span></p>
+        <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+    </div>
+
+    <br>
+
+    <h1 style="font-size: 100px;">Notes</h1>
+
+    <p style="font-size: 2rem; margin-top:5vw">
+        I will also be mentioning the notes part here for the sake of ease.
+
+        I did use some helps from llms when i got stuck <a href="https://chatgpt.com/share/6762ff14-a10c-8013-a10c-38205ffd8731">Chat 1</a>
+
+        There were some issues that were inporting and exporting files were not as simple as I thought it would be, as I am more used to using a frameworks I am not used to doing thing via vanilla javascript.
+    </p>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+    <script src="data-loader.js"></script>
+    <script src="table-renderer.js"></script>
+</body>
+
+</html>
