@@ -1,0 +1,130 @@
+:root {
+  --dark-bg: #0f0f0f;
+  --light-text: #e0e0e0;
+  --input-bg: wheat;
+  --input-border: rgb(197, 135, 19);
+  --filter-panel-bg: #1e1e1e;
+  --card-bg: #2b2b2b;
+  --card-border: #333;
+  --pagination-bg: #333;
+  --pagination-hover: #555;
+  --pagination-active: ##592000;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 100px;
+  padding: 10px;
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+}
+
+#app {
+  display: flex;
+  width: 100%;
+}
+
+#filter-panel {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 20px;
+  padding-right: 0px;
+  background-color: var(--filter-panel-bg);
+  border-right: 2px solid var(--card-border);
+}
+
+#filter-panel > h2 {
+  padding: 20px;
+}
+
+#cards {
+  width: 80%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: var(--filter-panel-bg);
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.pagination-button {
+  background-color: var(--pagination-bg);
+  color: var(--light-text);
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 45px;
+}
+
+.pagination-button.active {
+  background-color: var(--pagination-active);
+}
+
+.pagination-button:hover {
+  background-color: var(--pagination-hover);
+}
+
+#year {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+#year::-webkit-inner-spin-button, 
+#year::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#year::-moz-inner-spin-button, 
+#year::-moz-outer-spin-button {
+  border: none;
+  background: none;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-container div {
+  margin-bottom: 10px;
+}
+
+.filter-container label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.filter-container input[type="text"], 
+.filter-container input[type="number"] {
+  width: 70%;
+}
