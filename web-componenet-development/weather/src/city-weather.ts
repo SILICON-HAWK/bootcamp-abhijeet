@@ -18,6 +18,7 @@ class CityWeather extends HTMLElement {
   // Render the component's HTML
   render() {
     this.innerHTML = `
+    <div class = "card">
       <input type="text" id="inputValue" placeholder="Enter city name" />
       <button id="button">Get Weather</button>
       <div class="weather-info">
@@ -25,6 +26,7 @@ class CityWeather extends HTMLElement {
         <div id="temp"></div>
         <div id="desc"></div>
         <div id="symbol"></div>
+      </div>
       </div>
     `;
   }

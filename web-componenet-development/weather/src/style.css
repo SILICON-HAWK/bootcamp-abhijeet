@@ -24,13 +24,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  /* flex-direction: column; */
 }
 
-.container {
+.card {
   max-width: 600px;
   margin: 0 auto;
   padding: 5rem;
@@ -103,4 +104,21 @@ button:hover {
   button:hover {
     background-color: #5a67d8;
   }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top:10vh;
+}
+
+.external{
+  margin: 10vh;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.external > *{
+  margin: 10px;
 }
