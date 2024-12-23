@@ -2,3 +2,6 @@ html-css/html-css.zip
 design/Geist-v1.4.01/
 node_modules
 .env
+static-site-generation/my-ecommerce-site/public/amazon_products.db
+static-site-generation/my-ecommerce-site/src/app/fuse-data.json
+static-site-generation/my-ecommerce-site/src/app/fuse-index.json

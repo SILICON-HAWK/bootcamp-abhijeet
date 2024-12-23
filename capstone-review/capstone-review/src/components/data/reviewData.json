@@ -1,0 +1,214 @@
+[
+    {
+        "name": "Abhijeet A S",
+        "highlights": [
+            "The Review will be done for 2 main projects that are the 1000 Research paper filtering page and the weather widget web Application, Both of these website looks well laid out and well formatted. The app feels fast because of the live filtering of all the pages.",
+            "The page has used good use of minimalistic design and complements well with the dark theme colors",
+            "The filters on the 1000 research paper page works well and the export function also works as intended",
+            "The Weather widget app is also well laid out, the icon adds a nice touch to the dark themed website",
+            "The multi-page behaviour provided by Typescript HTML makes the page feel blazing fast as no page reload takes place when jumping from one to another"
+        ],
+        "improvements": [
+            "The Weather widget website does not respond to enter key press from the keyboard.",
+            "It only works if you click the 'Get Weather' button on the page.",
+            "This makes it awkward to use if you are on a PC, as normal UX dictates that the enter key acts as 'The get things done button'."
+        ],
+        "notes": "Proper chatgpt logs and approach is provided",
+        "website":{
+            "Research Paper":"https://celadon-dango-ed6188.netlify.app/",
+            "Weather App":"https://abhijeet-weather-app.netlify.app/",
+            "bootcamp-website":"https://boothcamp-abhijeet.netlify.app/"
+        },
+        "marks": 8.5
+    },
+    {
+        "name": "Kousik Bose",
+        "highlights": "Current Not submitted as of writing of this review.",
+        "improvements": "",
+        "notes": "",
+        "website": "",
+        "marks": null
+    },
+    {
+        "name": "Pradyot Soni",
+        "highlights": "Currently not submitted as of writing of this review",
+        "improvements": "",
+        "notes": "",
+        "website": "",
+        "marks": null
+    },
+    {
+        "name": "Davuluri Yashwant Rao",
+        "highlights": [
+            "Instead of the 1000 research paper yashwant has decided to use spotify music as the target data.",
+            "Streamify is a sleek music streaming platform with a dark theme, offering a user-friendly interface and robust search/filter functionalities",
+            "The layout is clean, with prominent search bars and well-arranged genre/popularity filters, enhancing search efficiency.",
+            "Song results are displayed in a clear grid layout with essential information like title, artist, album, and play buttons.",
+            "The Weather App has a minimalistic, light-themed design that provides essential weather details in a simple and accessible format.",
+            "The search functionality is straightforward, with a prominent city name search bar and easy-to-use navigation.",
+            "Both apps feature intuitive buttons and icons, enhancing the overall user experience."
+        ],
+        "improvements": "In the Weather App - If the widget was centered It would improve the ui as it getting stuck at the top looks ackward, Also consider using a tame backgroud color as the white is too hard on the eyes",
+        "notes": "The app is well Documented with all appropriate information and sections",
+        "website": "https://bootcamp-yashwant.netlify.app/",
+        "marks": 9
+    },
+    {
+        "name": "Yashraj Singh",
+        "highlights": [
+            "The Data Exploration website is clean, functional, and well-organized with search and filter options for regions, countries, and item types.",
+            "The layout is user-friendly, with a clear grid display of data cards containing relevant information like country, region, and item type.",
+            "The styling features a dark header with a light background, providing a professional look that is easy on the eyes.",
+            "The Weather Widget is compact, user-friendly, and features a dark theme with a light widget card, providing essential weather details in a clear format.",
+            "The search bar in the Weather Widget is prominently placed, making it easy for users to input city names and get quick results.",
+            "Both platforms feature intuitive buttons and icons that enhance user experience."
+        ],
+        "improvements": ["There is no Pagenation or lazy loading for the home page so navigation can be a bit overwhelming. The Weather Widget could be enhanced with more interactive elements in the data cards, The Colors for the app can be improved","The Research page title says research page but the content is regarding products so kindly make changes to reflect that"],
+        "notes": "The app is well-documented with all necessary information and sections, making it easy to navigate and understand.",
+        "website": "https://yashrajsingh-dusky.vercel.app/",
+        "marks": 8.5
+    },
+    {
+        "name": "Shifath Ali",
+        "highlights": [
+            "The website is well-designed, functional, and user-friendly for searching and filtering research papers, with a clean layout and intuitive filter options.",
+            "The research paper results are displayed in a clear format, with essential information such as title, authors, year, abstract, citations, references, and venue.",
+            "The Weather Widget is simple, clean, and user-friendly, showcasing different implementations of weather widgets with clear sections for static and interactive widgets.",
+            "Both websites feature a light background with dark text, creating a professional and readable design.",
+            "The search and filter options, as well as the interactive elements in both websites, are well-placed and intuitive, enhancing the user experience."
+        ],
+        "improvements": [
+            "The authors' format could be improved for better presentation as looking at the array is a bit jaaring",
+            "you can hide the specific Reference's ID to clean the card a bit.",
+            "The landing page for the weather widget app looks a but messy, considering using multiple pages or re-rendering to enhance UI.",
+            "Dark theme or a tame light theme could be used to make it less straining on the eyes"
+        ],
+        "notes": "",
+        "website": "https://shifath.netlify.app/",
+        "marks": 8.5
+    },
+    {
+        "name": "Rohan B",
+        "highlights": [
+            "The Research Papers Explorer has a clean and well-organized layout, with a grid system to display research papers, making it easy to scan through multiple entries.",
+            "The filter options for institution, journal, and year are neatly arranged, allowing users to refine search results effectively.",
+            "Research paper results are displayed in a clear, readable format, including essential details like authors, journal, year, citations, institution, field, impact factor, DOI, and keywords.",
+            "Typography is simple and readable, with effective use of font sizes and weights to differentiate headings from body text.",
+            "The Weather Dashboard has a clean and intuitive layout, with a prominent search bar and well-organized weather information displayed in a card format.",
+            "The use of dark background with light text enhances readability and gives the dashboard a modern, professional look.",
+            "The compare cities page is pretty cool as it dynamically adds cities if you want to add more."
+        ],
+        "improvements": [
+            "The design could benefit from additional visual elements or slight variations in color to make the interface more engaging."
+        ],
+        "notes": "Could not find any Notes Links for LLM only screenshot of apps are visible",
+        "website": "https://stellular-marshmallow-b77b25.netlify.app/",
+        "marks": 9
+    },
+    {
+        "name": "Vadlamani Uday Kumar",
+        "highlights": [
+            "The website's content is rich and informative, with research papers listed with titles and abstracts",
+            "The website uses a dark background with light text by default, also has a theme switch button",
+            "The Weather Widget mobile interface is well-organized, with a prominent search bar and clear presentation of weather details, making it easy to interact with the widget.",
+            "The layout of the Weather Widget is clean, with weather information displayed in a card format that is visually appealing and easy to read.",
+            "The Weather Widget interface uses simple, readable fonts with varied sizes and weights to distinguish headings and body text, and intuitive weather icons that enhance understanding."
+        ],
+        "improvements": ["The research paper site could benefit with differentiation of the filters and the content section", "It seems that there is some issue with the CSS implementation of the page as there is a y-axis scroll bar even though nothing in the page is overflowing on the y-axis"],
+        "notes": "",
+        "website": "https://vadlamaniuday.netlify.app/",
+        "marks": 9
+    },
+    {
+        "name": "Shilpa",
+        "highlights": ["Shilpa has made the ecommerce website web app", "The page is only a single page and every other navigation is broken as of writing this review", "The Filtering function works", "The theme of the site is pretty good"],
+        "improvements": ["The ecommerce site has very limited data set so the extent of filtering cannot be judged", "There are no preset filter fields", "I think the icon links are not working properly in the weather app as of writing this review","Dark Theme could benefit the various apps"],
+        "notes": "",
+        "website": "https://shilpamudusu.netlify.app/",
+        "marks": 6
+    },
+    {
+        "name": "Zoya Haider",
+        "highlights": [
+            "The 'Researcher' page is well-implemented, featuring a side panel for search and filtering. It has a clean layout with properly structured cards and well-labeled data.",
+            "The filters for author, year, category, and rating are well-organized and effective. The export button is prominent, and the download functionality works smoothly.",
+            "The Weather app has a clean design with a functional city search feature, making it easy to find weather information.",
+            "The Weather app's card display is visually appealing, and the implementation of pagination for the weather data (Page 2) works as expected."
+        ],
+        "improvements": [
+            "The 'Researcher' page could benefit from proper pagination to ensure easy navigation between pages of research cards.",
+            "There is no functionality to go back to the previous page once the user moves to the next page of research cards, which could be frustrating for navigation.",
+            "A dark theme would improve the overall experience by reducing eye strain during extended usage."
+        ],
+        "notes": "Notes are present with links to chatgpt",
+        "website": "https://capable-moonbeam-4dcd87.netlify.app/",
+        "marks": 7
+    },
+    {
+        "name": "Balaji S.K",
+        "highlights": [
+            "Balaji has completed the ecommerce website along with the other 2 works",
+            "Clean design with effective research paper cards displaying key metadata and user-friendly filtering options.",
+            "Pagination makes it easy to navigate.",
+            "Intuitive city weather app with real-time updates, clear input field, and context-aware weather messages.",
+            "The research app's 'Read More' feature provides access to detailed paper information without cluttering the layout.",
+            "Weather app's gradient background design is visually appealing but could benefit from additional weather metrics.",
+            "The product website is clean and good looking, the filters are functional, also supports selection of multiple categories"
+        ],
+        "improvements": [
+            "Improve pagination to make subsequent pages more visible and easier to navigate. currently you can only navigate one page at a time so going from 1 to 10 could be a chore",
+            "Include more comprehensive weather data such as humidity and precipitation for a fuller user experience.",
+            "Dark Theme could benefit the site a lot"
+        ],
+        "notes": "Notes provided",
+        "website": "https://balajibootcamp1.netlify.app/",
+        "marks": 9
+    },
+    {
+        "name": "Guduru Lakshmi Tanuja",
+        "highlights": "Could not find the links of deployment.",
+        "improvements": "",
+        "notes": "",
+        "website": "",
+        "marks": null
+    },
+    {
+        "name": "Sonia Shaik",
+        "highlights": [
+            "Clear filter interface with essential parameters for research paper search, though filter activity lacks visual feedback.",
+            "Research papers are displayed in well-organized cards, but the abstracts need better truncation to avoid overflow.",
+            "white-themed, professional design enhances readability.",
+            "Minimalist weather widget design with a clear temperature display and background images matching weather conditions.",
+            "Page 2 feature implemented"
+        ],
+        "improvements": [
+            "Ensure 'Read More' links have better prominence for user interaction.",
+            "Provide more robust filtering options for authors and institutions in the research section.",
+            "Consider reducing horizontal space take by paper cards, consider a more compact view and read more option to show more details",
+            "page 2 didnt render properly for me so I cannot judge that part."
+        ],
+        "notes": "",
+        "website": "https://bootcamp-sonia-shaik.netlify.app/",
+        "marks": 8
+    },
+    {
+        "name": "Tharala Varun Sai Yadav",
+        "highlights": [
+            "Clean search interface with year range selection and title filtering capabilities.",
+            "Dark theme provides good contrast, ideal for extended reading sessions.",
+            "Research paper cards effectively display metadata including authors, year, and abstracts.",
+            "Efficient 'Read more' implementation for abstract expansion",
+            "Dark theme with cyan accents and clear typography maintains readability and visual appeal."
+        ],
+        "improvements": [
+            "Implement proper pagination.",
+            "Add visual feedback for filter selections in the research papers section.",
+            "Include crucial weather metrics such as humidity, wind speed, and forecast functionality in the weather widget.",
+            "Ensure consistent temperature values across different pages for better user experience.",
+            "The Weather data could use Cards to make it more appealing to look at."
+        ],
+        "notes": "",
+        "website": "https://varun-acog.netlify.app/",
+        "marks": 8
+    }
+]

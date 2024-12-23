@@ -14,3 +14,7 @@ export function setFilteredPapers(papers: any[]) {
 export function setCurrentPage(page: number) {
   currentPage = page;
 }
+
+export function getFilteredPapers(): any[] {
+  return filteredPapers;
+}

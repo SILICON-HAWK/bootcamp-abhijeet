@@ -1,14 +1,17 @@
 import './style.css';
 import { fetchPapers } from './fetchPapers';
-import { setAllPapers, setCurrentPage, setFilteredPapers } from './state';
+import { setAllPapers, setCurrentPage, setFilteredPapers, getFilteredPapers } from './state';
 import { updateDisplay } from './render';
 import { applyAdvancedFilters } from './advanceFilter';
+import { downloadCSV } from './csvutils';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const allPapers = await fetchPapers();
   setAllPapers(allPapers);
   setFilteredPapers(allPapers); // Initialize with all papers
   updateDisplay();
+
+  setFilteredPapers(allPapers);
 
   const authorInput = document.getElementById('author') as HTMLInputElement;
   const titleInput = document.getElementById('title') as HTMLInputElement;
@@ -27,6 +30,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     yearInput.addEventListener('input', applyFilters);
   }
 
+  const exportButton = document.getElementById('export-csv');
+  if (exportButton) {
+    exportButton.addEventListener('click', () => {
+      const filteredPapers = getFilteredPapers(); // Retrieve globally managed filtered papers
+      downloadCSV(filteredPapers, 'filtered_papers.csv');
+    });
+    console.log('called export csv')
+  }
   // Function to apply filters based on input fields
   function applyFilters() {
     setCurrentPage(1)

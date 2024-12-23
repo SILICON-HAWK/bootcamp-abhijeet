@@ -1,0 +1,167 @@
+/* General Reset */
+:root {
+  --background-color: #121212; /* Dark Background */
+  --navbar-background: #1e1e1e; /* Darker Navbar Background */
+  --navbar-color: #ffffff; /* White Text for Navbar */
+  --link-color: #4cc9f0; /* Vivid Sky Blue for Links */
+  --link-hover-color: #f7f9fc; /* Light Background Color for Hover */
+  --content-background: #1c1c1c; /* Slightly Lighter Background for Content */
+  --heading-color: #bb86fc; /* Purple for Headings */
+  --link-visited: #9138ff; /* for links that are already visited */
+  --text-color: #e0e0e0; /* Light Grey for Text */
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.navbar {
+  min-width: 15vw;
+  background-color: var(--navbar-background);
+  color: var(--navbar-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar h2 {
+  margin-bottom: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.entire-li-link {
+  margin: 0.5rem 0;
+  padding: 10px;
+}
+
+.navbar li:hover{
+  background-color: #bb86fc;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--navbar-color);
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Content Area */
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: var(--content-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-page h1 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.review-page p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.link-style:link {
+  color: var(--link-color);
+}
+
+.link-style:visited {
+  color: var(--link-visited);
+}
+
+.link-style:hover {
+  color: var(--link-hover-color);
+}
+
+.review-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--content-background);
+  margin-left:2vw;
+  margin-right: 19vw;
+}
+
+.review-page h1 {
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+
+.review-page a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.review-page a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.review-page a:visited {
+  color: #66d9ef;
+}
+
+.review-details {
+  margin-top: 20px;
+  border-top: 2px solid var(--text-color);
+  padding-top: 10px;
+}
+
+.review-details section {
+  margin-bottom: 20px;
+}
+
+.review-details h2 {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.review-details p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+#home-button:hover{
+  background-color: var(--link-visited);
+}
+
+#home-button{
+  border: 1px solid var(--link-color);
+}
+
+footer{
+  color: whitesmoke;
+  margin-bottom: 2vw;
+}
+
+.link-container > *{
+  margin-left: 20px;
+}

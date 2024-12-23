@@ -128,3 +128,11 @@ input {
 .filter-container input[type="number"] {
   width: 70%;
 }
+
+
+button{
+  border-radius: 100px;
+  padding: 10px;
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+}
