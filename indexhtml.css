@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #121212;
+    /* Dark Background */
+    --navbar-background: #1e1e1e;
+    /* Darker Navbar Background */
+    --navbar-color: #ffffff;
+    /* White Text for Navbar */
+    --link-color: #4cc9f0;
+    /* Vivid Sky Blue for Links */
+    --link-hover-color: #f7f9fc;
+    /* Light Background Color for Hover */
+    --content-background: #1c1c1c;
+    /* Slightly Lighter Background for Content */
+    --heading-color: #bb86fc;
+    /* Purple for Headings */
+    --link-visited: #9138ff;
+    /* for links that are already visited */
+    --text-color: #e0e0e0;
+    /* Light Grey for Text */
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.sidebar {
+    width: 16vw;
+    height: 100vh;
+    background-color: var(--navbar-background);
+    color: var(--navbar-color);
+    padding: 20px;
+}
+
+.sidebar > button {
+    background-color: var(--heading-color);
+    height: 5vh;
+    width: 100%;
+    font-size: larger;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 1vw;
+    width: 13vw;
+    background-color: var(--content-background);
+    padding: 1vw;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: var(--heading-color);
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.card a:hover {
+    color: var(--link-hover-color);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        position: relative;
+        width: 89vw;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+}
