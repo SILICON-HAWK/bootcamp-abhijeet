@@ -15,8 +15,10 @@
         /* Grid layout for the entire page */
         body {
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr; /* Three columns: sidebars + main content */
-            grid-template-rows: auto 1fr auto; /* Header, content, and footer */
+            grid-template-columns: 1fr 3fr 1fr;
+            /* Three columns: sidebars + main content */
+            grid-template-rows: auto 1fr auto;
+            /* Header, content, and footer */
             grid-template-areas:
                 "header header header"
                 "sidebar-left main sidebar-right"
@@ -72,11 +74,14 @@
             border-collapse: collapse;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
         }
@@ -85,6 +90,8 @@
 
 <body>
     <header>
+        <button style="width:150px; height:50px;" onclick="window.location.href='../index.html'">Home</button>
+        <br>
         <h1>Abhijeet's Gaming Hub</h1>
     </header>
 
@@ -117,7 +124,8 @@
                 <tr>
                     <td>Baldur's Gate 3</td>
                     <td>
-                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3" width="auto" height="120" />
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg"
+                            alt="Baldur's Gate 3" width="auto" height="120" />
                         <p><strong>Game Details:</strong></p>
                         <ol>
                             <li>Genre: Role-Playing Game (RPG)</li>
@@ -130,7 +138,8 @@
                 <tr>
                     <td>Portal 2</td>
                     <td>
-                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2" width="auto" height="120" />
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2"
+                            width="auto" height="120" />
                         <p><strong>Game Details:</strong></p>
                         <ol>
                             <li>Genre: First-Person Puzzle-Platformer</li>
@@ -143,7 +152,8 @@
                 <tr>
                     <td>Monster Hunter: World</td>
                     <td>
-                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg" alt="Monster Hunter: World" width="auto" height="120" />
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg"
+                            alt="Monster Hunter: World" width="auto" height="120" />
                         <p><strong>Game Details:</strong></p>
                         <ol>
                             <li>Genre: Action Role-Playing Game</li>
