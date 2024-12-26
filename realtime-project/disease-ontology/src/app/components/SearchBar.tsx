@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search for a disease..."
-        className="flex-grow"
+        className="flex-grow min-w-52"
       />
       <Button type="submit">Search</Button>
     </form>

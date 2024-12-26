@@ -159,3 +159,26 @@ export async function getPaperDetails(paperId: string): Promise<any> {
   }
 }
 
+/**
+ * Fetches a specified number of random diseases.
+ *Random diseases api call currently not implemented future scope 
+ * @param {number} count - The number of random diseases to fetch.
+ * @returns {Promise<any[]>} - An array of random diseases.
+ */
+export async function getRandomDiseases(count: number): Promise<any[]> {
+  try {
+    const response = await axios.get<DiseaseSearchResponse>(`${OLS_API_BASE}/search`, {
+      params: {
+        q: '*',
+        ontology: 'efo,mondo',
+        type: 'class',
+        rows: count,
+        start: Math.floor(Math.random() * 1000), // Random starting point
+      },
+    });
+    return response.data.response.docs;
+  } catch (error) {
+    console.error("Error fetching random diseases:", error);
+    throw new Error("Failed to fetch random diseases. Please try again later.");
+  }
+}

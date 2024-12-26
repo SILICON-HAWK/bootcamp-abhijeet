@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css" />
+    <style>
+        :root {
+            --background-color: #121212; /* Dark Background */
+            --navbar-background: #1e1e1e; /* Darker Navbar Background */
+            --navbar-color: #ffffff; /* White Text for Navbar */
+            --link-color: #4cc9f0; /* Vivid Sky Blue for Links */
+            --link-hover-color: #f7f9fc; /* Light Background Color for Hover */
+            --content-background: #1c1c1c; /* Slightly Lighter Background for Content */
+            --heading-color: #bb86fc; /* Purple for Headings */
+            --link-visited: #9138ff; /* for links that are already visited */
+            --text-color: #e0e0e0; /* Light Grey for Text */
+        }
+        body {
+            background-color: var(--background-color);
+            font-size: 16px;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-content {
+            padding: 20px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+        .button {
+            background-color: var(--heading-color);
+            color: var(--navbar-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 70px;
+            width: 200px;
+            font-size: 1.2rem;
+        }
+        .button:hover {
+            background-color: var(--link-hover-color);
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Notes For real time Project</h1>
+        <a href="https://disease-ontology.vercel.app/"><h3>Live Deployement LINK</h3></a>
+        <br>
+        <button class="button" onclick="window.location.href='../index.html'">Go to Nav</button>
+        <p>The project was Makes use of next.js and the host for the application is vercel I made use of LLM extensively as nearly everything was outside of my knowledge domain so LLM helped me to get the project started and I added the final touches and modified thing to a wroking state</p>
+
+        <p>Possible improvement for the project consist of turning the hierarchy of the diseases into a graph type structure</p>
+
+        <p>Below are the Chat logs. The main LLM used is vercel V0</p>
+        <a href="https://v0.dev/chat/aCEImvqR54m"><h3>V0 CHAT</h3></a>
+        <a href="https://chatgpt.com/share/676d36ac-4a50-8013-befa-58606dc99841"><h3>Chat GPT chat</h3></a>
+    </div>
+</body>
+</html>

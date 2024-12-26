@@ -20,9 +20,10 @@ interface DiseaseDetailsProps {
     authors: string[]
   }[]
   onBack: () => void
+  onHierarchySelect: (selectedHierarchy: any) => void // Ensure to define the correct type for selectedHierarchy if possible
 }
 
-export default function DiseaseDetails({ disease, hierarchy, papers, onBack }: DiseaseDetailsProps) {
+export default function DiseaseDetails({ disease, hierarchy, papers, onBack, onHierarchySelect }: DiseaseDetailsProps) {
   return (
     <Card className="w-full">
       <CardHeader>
@@ -30,6 +31,9 @@ export default function DiseaseDetails({ disease, hierarchy, papers, onBack }: D
         <CardDescription>
           {disease.ontology_name} ID: {disease.obo_id || disease.id}
         </CardDescription>
+        <Button onClick={onBack} variant="outline">
+          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Search Results
+        </Button>
       </CardHeader>
       <CardContent className="space-y-4">
         <div>
@@ -43,7 +47,7 @@ export default function DiseaseDetails({ disease, hierarchy, papers, onBack }: D
         {hierarchy && (
           <div>
             <h3 className="text-lg font-semibold">Hierarchy</h3>
-            <DiseaseHierarchy hierarchy={hierarchy} />
+            <DiseaseHierarchy hierarchy={hierarchy} onSelect={onHierarchySelect} />
           </div>
         )}
         {papers.length > 0 && (
@@ -53,12 +57,6 @@ export default function DiseaseDetails({ disease, hierarchy, papers, onBack }: D
           </div>
         )}
       </CardContent>
-      <CardFooter>
-        <Button onClick={onBack} variant="outline">
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Search Results
-        </Button>
-      </CardFooter>
     </Card>
   )
 }
-

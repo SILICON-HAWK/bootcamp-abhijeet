@@ -39,7 +39,7 @@ export default function SearchResults({ results, onSelect }: SearchResultsProps)
         return (
           <Card 
             key={itemKey}
-            className="flex flex-col"
+            className="flex flex-col hover:shadow-neutral-800 transition-shadow duration-300 ease-in-out bg-gradient-to-br from-fuchsia-100 to-cyan-100 background-animate"
           >
             <CardHeader>
               <CardTitle>{disease.label}</CardTitle>

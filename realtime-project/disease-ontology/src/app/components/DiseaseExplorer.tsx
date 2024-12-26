@@ -63,8 +63,18 @@ export default function DiseaseExplorer() {
     setIsLoading(false)
   }
 
+  const handleHierarchySelect = async (node) => {
+    const diseaseToSearch: Disease = {
+      id: '', // id is not available in hierarchy node, set an empty string or handle accordingly
+      label: node.label,
+      ontology_name: '', // ontology_name is not available in hierarchy node, set an empty string or handle accordingly
+      iri: node.iri
+    }
+    await handleSelectDisease(diseaseToSearch)
+  }
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 ml-30 mr-30 lg:ml-40 lg:mr-40">
       <SearchBar onSearch={handleSearch} />
       {error && <p className="text-red-500">{error}</p>}
       {isLoading && <p>Loading...</p>}
@@ -75,6 +85,7 @@ export default function DiseaseExplorer() {
           hierarchy={hierarchy}
           papers={papers}
           onBack={() => setSelectedDisease(null)}
+          onHierarchySelect={handleHierarchySelect}
         />
       )}
     </div>

@@ -11,7 +11,11 @@ interface Paper {
   abstract: string
 }
 
-export default function ResearchPapers({ papers }: any) {
+interface ResearchPapersProps {
+  papers: string[] // Array of paper IDs
+}
+
+export default function ResearchPapers({ papers }: ResearchPapersProps) {
   const [paperDetails, setPaperDetails] = useState<Paper[]>([])
   const [errorPapers, setErrorPapers] = useState<string[]>([])
   const renderedPaperIds = new Set<string>()

@@ -19,7 +19,7 @@ export default function RootLayout({
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen bg-background text-foreground">
             <header className="container mx-auto p-4 flex justify-between items-center">
-              <h1 className="text-2xl font-bold">Disease Ontology Explorer</h1>
+              <h1 className="text-2xl font-bold">Disease Ontology Explorer by Abhijeet</h1>
               <ThemeToggle />
             </header>
             <main className="container mx-auto p-4">

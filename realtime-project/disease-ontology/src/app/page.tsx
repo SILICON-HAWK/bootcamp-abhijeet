@@ -1,5 +1,4 @@
 import DiseaseExplorer from './components/DiseaseExplorer';
-
 const HomePage: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
