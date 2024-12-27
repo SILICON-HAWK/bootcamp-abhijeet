@@ -39,14 +39,14 @@ export default function SearchResults({ results, onSelect }: SearchResultsProps)
         return (
           <Card 
             key={itemKey}
-            className="flex flex-col hover:shadow-neutral-800 transition-shadow duration-300 ease-in-out bg-gradient-to-br from-fuchsia-100 to-cyan-100 background-animate"
+            className="flex flex-col hover:shadow-neutral-800 transition-shadow duration-300 ease-in-out bg-gradient-to-br from-fuchsia-100 to-cyan-100 background-animate dark:from-purple-700 dark:to-cyan-600 dark:hover:transform dark:hover:scale-105 dark:transition-all hover:transform hover:scale-105 hover:transition-all"
           >
             <CardHeader>
-              <CardTitle>{disease.label}</CardTitle>
-              <CardDescription>{disease.ontology_name} ID: {disease.obo_id || disease.id}</CardDescription>
+              <CardTitle className="text-2xl">{disease.label}</CardTitle>
+              <CardDescription className='dark:text-white'>{disease.ontology_name} ID: {disease.obo_id || disease.id}</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-600 line-clamp-3">
+              <p className="text-sm text-gray-600 line-clamp-3 dark:text-white">
                 {disease.description?.[0] || 'No description available.'}
               </p>
             </CardContent>

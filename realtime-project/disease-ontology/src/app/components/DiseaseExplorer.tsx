@@ -74,7 +74,7 @@ export default function DiseaseExplorer() {
   }
 
   return (
-    <div className="space-y-4 ml-30 mr-30 lg:ml-40 lg:mr-40">
+    <div className="space-y-4 ml-30 mr-30 lg:ml-40 lg:mr-40 lg:min-w-96">
       <SearchBar onSearch={handleSearch} />
       {error && <p className="text-red-500">{error}</p>}
       {isLoading && <p>Loading...</p>}
