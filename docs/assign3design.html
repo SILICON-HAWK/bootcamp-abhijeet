@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Trials Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .settings-panel {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .settings-panel h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f8f9fa;
+        }
+        .column-selector, .filter-section {
+            margin-bottom: 20px;
+        }
+        .column-selector label, .filter-section label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .filter-section input, .filter-section select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .study-link {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .study-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Clinical Trials Explorer</h1>
+</header>
+
+<div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search clinical trials by disease name...">
+            <button>Search</button>
+        </div>
+
+        <!-- Table View -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Study Title</th>
+                        <th>Condition</th>
+                        <th>Status</th>
+                        <th>Start Date</th>
+                        <th>Phase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="study-link">Study 1</a></td>
+                        <td>Disease A</td>
+                        <td>Recruiting</td>
+                        <td>2023-01-01</td>
+                        <td>Phase 2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="study-link">Study 2</a></td>
+                        <td>Disease B</td>
+                        <td>Completed</td>
+                        <td>2022-05-15</td>
+                        <td>Phase 3</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="study-link">Study 3</a></td>
+                        <td>Disease C</td>
+                        <td>Not Yet Recruiting</td>
+                        <td>2024-03-10</td>
+                        <td>Phase 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel">
+        <h2>Column Settings</h2>
+        <div class="column-selector">
+            <label><input type="checkbox" checked> Study Title</label>
+            <label><input type="checkbox" checked> Condition</label>
+            <label><input type="checkbox" checked> Status</label>
+            <label><input type="checkbox" checked> Start Date</label>
+            <label><input type="checkbox" checked> Phase</label>
+        </div>
+
+        <h2>Filters</h2>
+        <div class="filter-section">
+            <label for="filter-title">Filter by Title</label>
+            <input type="text" id="filter-title" placeholder="Enter title keywords...">
+
+            <label for="filter-phase">Filter by Phase</label>
+            <select id="filter-phase">
+                <option value="">Select Phase</option>
+                <option value="Phase 1">Phase 1</option>
+                <option value="Phase 2">Phase 2</option>
+                <option value="Phase 3">Phase 3</option>
+                <option value="Phase 4">Phase 4</option>
+            </select>
+
+            <label for="filter-status">Filter by Status</label>
+            <select id="filter-status">
+                <option value="">Select Status</option>
+                <option value="Recruiting">Recruiting</option>
+                <option value="Completed">Completed</option>
+                <option value="Not Yet Recruiting">Not Yet Recruiting</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

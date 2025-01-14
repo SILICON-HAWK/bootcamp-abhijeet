@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Visualization App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .component {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .component:hover {
+            background-color: #f1f1f1;
+        }
+        .sidepanel {
+            width: 300px;
+            background: #f4f4f4;
+            border-left: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+        .annotation-card {
+            background: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .add-annotation textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .add-annotation button {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .add-annotation button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Component Section -->
+    <div class="component" onclick="selectComponent('Table')">
+        <h2>Data Visualization - Table</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="component" onclick="selectComponent('Graph')">
+        <h2>Data Visualization - Graph</h2>
+        <p>[Graph Placeholder]</p>
+    </div>
+
+    <div class="component" onclick="selectComponent('Card')">
+        <h2>Data Visualization - Card</h2>
+        <div style="display: flex; gap: 10px;">
+            <div style="border: 1px solid #ddd; padding: 10px; flex: 1;">Card 1</div>
+            <div style="border: 1px solid #ddd; padding: 10px; flex: 1;">Card 2</div>
+            <div style="border: 1px solid #ddd; padding: 10px; flex: 1;">Card 3</div>
+        </div>
+    </div>
+</div>
+
+<div class="sidepanel" id="sidepanel">
+    <h2>Annotations</h2>
+    <div id="annotations-list">
+        <p>Select a component to see its annotations.</p>
+    </div>
+    <div class="add-annotation">
+        <textarea id="annotation-input" placeholder="Add your annotation here..."></textarea>
+        <button onclick="addAnnotation()">Add Annotation</button>
+    </div>
+</div>
+
+<script>
+    let selectedComponent = null;
+
+    function selectComponent(componentName) {
+        selectedComponent = componentName;
+        document.getElementById('annotations-list').innerHTML = `<h3>${componentName} Annotations</h3>`;
+    }
+
+    function addAnnotation() {
+        if (!selectedComponent) {
+            alert('Please select a component to annotate.');
+            return;
+        }
+
+        const input = document.getElementById('annotation-input');
+        const annotationText = input.value.trim();
+
+        if (annotationText) {
+            const annotationsList = document.getElementById('annotations-list');
+            const annotationCard = document.createElement('div');
+            annotationCard.className = 'annotation-card';
+            annotationCard.textContent = annotationText;
+            annotationsList.appendChild(annotationCard);
+            input.value = '';
+        } else {
+            alert('Annotation text cannot be empty.');
+        }
+    }
+</script>
+
+</body>
+</html>
